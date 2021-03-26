@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "E-commerce Test automation regression suite" parallel = "tests" thread-count="2">
+	<listeners>
+		<listener class-name="com.qa.covisint.testlisteners.ExtentReportListener"/>
+		<listener class-name="com.qa.covisint.testlisteners.TestAllureListener"/>
+	</listeners>
+	<test name ="LoginPage Test">
+		<classes>
+			<class name = "com.qa.covisint.test.LoginPageTest"/>
+		</classes>
+	</test>
+	
+	<test name ="Account Page Test">
+		<classes>
+			<class name = "com.qa.covisint.test.AccountPageTest"/>
+		</classes>
+	</test>
+	
+</suite>
